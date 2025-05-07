@@ -6,8 +6,8 @@ import { Send } from 'lucide-react'
 export default function Header() {
   // md:bg-gradient-to-r md:from-cyan-100 md:via-teal-200 md:to-blue-300
   return (
-    <header className='sticky bottom-0 px-5 text-white md:bg-gradient-to-br md:from-indigo-200 md:via-purple-300 md:to-pink-300'>
-      <div className='container mx-auto flex h-14 items-center'>
+    <header className='relative px-5 text-white md:sticky md:bottom-0 md:bg-gradient-to-br md:from-indigo-200 md:via-purple-300 md:to-pink-300'>
+      <div className='absolute top-10 right-10 z-1000 container mx-auto flex h-14 justify-end md:static md:top-0 md:right-0 md:items-center'>
         {/* Desktop */}
         <MainNav />
         {/* Mobile */}

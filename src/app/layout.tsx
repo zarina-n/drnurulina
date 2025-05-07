@@ -36,6 +36,42 @@ export default function RootLayout({
           <Header />
           <main className='container mx-auto mt-4 w-full flex-1 grow'>
             {children}
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              rerum id consequatur exercitationem sequi harum modi optio,
+              voluptate explicabo vero ullam impedit cum illo sapiente,
+              architecto quae iure fugit enim?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              rerum id consequatur exercitationem sequi harum modi optio,
+              voluptate explicabo vero ullam impedit cum illo sapiente,
+              architecto quae iure fugit enim?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              rerum id consequatur exercitationem sequi harum modi optio,
+              voluptate explicabo vero ullam impedit cum illo sapiente,
+              architecto quae iure fugit enim?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              rerum id consequatur exercitationem sequi harum modi optio,
+              voluptate explicabo vero ullam impedit cum illo sapiente,
+              architecto quae iure fugit enim?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              rerum id consequatur exercitationem sequi harum modi optio,
+              voluptate explicabo vero ullam impedit cum illo sapiente,
+              architecto quae iure fugit enim?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              rerum id consequatur exercitationem sequi harum modi optio,
+              voluptate explicabo vero ullam impedit cum illo sapiente,
+              architecto quae iure fugit enim?
+            </p>
           </main>
           <TailwindIndicator />
           <Footer />

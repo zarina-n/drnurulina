@@ -11,12 +11,12 @@ import Link from 'next/link'
 export default function MobileNav() {
   // bg-gradient-to-r from-cyan-100 via-teal-200 to-blue-300
   return (
-    <div className='flex justify-end md:hidden'>
+    <div className='md:hidden'>
       <Sheet>
-        <SheetTrigger className='cursor-pointer rounded-full bg-gradient-to-br from-indigo-200 via-purple-300 to-pink-300 p-2'>
+        <SheetTrigger className='left-5 cursor-pointer rounded-full bg-gradient-to-br from-indigo-200 via-purple-300 to-pink-300 p-2 opacity-75 hover:opacity-100'>
           <AlignJustify />
         </SheetTrigger>
-        <SheetContent className='p-4'>
+        <SheetContent className='z-2000 p-4'>
           <SheetTitle>
             <Link href='/' className='italic'>
               Dr Nurulina
