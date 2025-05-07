@@ -7,13 +7,13 @@ interface NavLinkItem {
 }
 
 export const navItems: NavLinkItem[] = [
-  {
-    id: 1,
-    href: '/',
-    label: 'Dr Nurulina',
-    isExternal: false,
-    homeButton: true
-  },
+  // {
+  //   id: 1,
+  //   href: '/',
+  //   label: 'Dr Nurulina',
+  //   isExternal: false,
+  //   homeButton: true
+  // },
   {
     id: 2,
     href: '/guides',

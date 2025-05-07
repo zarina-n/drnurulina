@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import { Navbar } from '@/components/custom/navigation/Navbar'
+// import { Navbar } from '@/components/custom/navigation/Navbar'
 import Footer from '@/components/custom/footer/Footer'
+import Header from '@/components/navbar/header'
+import { TailwindIndicator } from '@/components/tailwind-indicator'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,9 +31,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className='flex h-screen flex-col'>
-          <Navbar />
-          <main className='flex-1 grow p-5'> {children}</main>
+        <div className='flex h-screen w-full flex-col'>
+          {/* <Navbar /> */}
+          <Header />
+          <main className='container mx-auto mt-4 w-full flex-1 grow'>
+            {children}
+          </main>
+          <TailwindIndicator />
           <Footer />
         </div>
       </body>
