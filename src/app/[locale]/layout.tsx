@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-// import { Navbar } from '@/components/custom/navigation/Navbar'
 import Footer from '@/components/custom/footer/Footer'
 import Header from '@/components/custom/navbar/header'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
@@ -35,10 +34,9 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className='flex h-screen w-full flex-col'>
-          {/* <Navbar /> */}
+        <div className='flex min-h-screen flex-col'>
           <Header />
-          <main className='container mx-auto mt-4 w-full flex-1 grow'>
+          <main className='lg:px-[calc(50%-600px) mx-auto mt-4 w-full max-w-screen-xl flex-1 grow px-4 md:px-6 lg:px-8'>
             {children}
           </main>
           <TailwindIndicator />
