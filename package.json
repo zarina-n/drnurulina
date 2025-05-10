@@ -9,7 +9,8 @@
     "lint": "next lint",
     "lint:fix": "eslint --fix && prettier --write \"**/*.{css,scss}\"",
     "typecheck": "tsc --noEmit --pretty",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "nexus": "i18nexus pull"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
@@ -25,6 +26,7 @@
     "@radix-ui/react-slot": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.10.5",
     "i18next": "^25.1.2",
     "i18next-browser-languagedetector": "^8.1.0",
     "i18next-resources-to-backend": "^1.2.1",
