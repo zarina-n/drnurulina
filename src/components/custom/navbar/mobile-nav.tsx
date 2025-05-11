@@ -32,7 +32,6 @@ export default function MobileNav() {
           </nav>
           <h1 className='flex items-center justify-start'>
             <Link href='/'>
-              {/*todo: add link and hover text*/}
               <Send />
             </Link>
           </h1>

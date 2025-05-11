@@ -8,9 +8,7 @@ export default function Header() {
   return (
     <header className='relative px-5 text-white md:sticky md:bottom-0 md:bg-gradient-to-br md:from-indigo-200 md:via-purple-300 md:to-pink-300'>
       <div className='absolute top-10 right-10 z-1000 container mx-auto flex h-14 justify-end md:static md:top-0 md:right-0 md:items-center'>
-        {/* Desktop */}
         <MainNav />
-        {/* Mobile */}
         <MobileNav />
 
         <h1 className='hidden flex-1 items-center justify-end md:flex'>
