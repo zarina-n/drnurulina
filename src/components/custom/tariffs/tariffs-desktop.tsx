@@ -4,7 +4,7 @@ export default function TariffsDesktop({
   fullInfo: (string | string[])[]
 }) {
   return (
-    <div className='mb-4 hidden grow space-y-3 md:block'>
+    <div className='mb-4 hidden grow space-y-3 px-6 pb-4 md:block'>
       {fullInfo.map((block, j) =>
         Array.isArray(block) ? (
           <ul key={j} className='list-disc pl-5 text-sm text-gray-700'>
