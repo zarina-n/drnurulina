@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import Footer from '@/components/custom/footer/Footer'
 import Header from '@/components/custom/navbar/header'
+import Footer from '@/components/custom/footer/footer'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { dir } from 'i18next'
 
@@ -29,6 +29,7 @@ export default async function RootLayout({
   params: { locale: string }
 }) {
   const { locale } = await params
+
   return (
     <html lang={locale} dir={dir(locale)}>
       <body

@@ -4,7 +4,7 @@ import {
   SheetTitle,
   SheetTrigger
 } from '@/components/ui/sheet'
-import { navItems } from '@/lib/navItems'
+import { navItems } from '@/lib/data'
 import { AlignJustify, Send } from 'lucide-react'
 import Link from 'next/link'
 
@@ -32,7 +32,6 @@ export default function MobileNav() {
           </nav>
           <h1 className='flex items-center justify-start'>
             <Link href='/'>
-              {/*todo: add link and hover text*/}
               <Send />
             </Link>
           </h1>

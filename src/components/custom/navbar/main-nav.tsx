@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { navItems } from '@/lib/navItems'
+import { navItems } from '@/lib/data'
 
 export default function MainNav() {
   return (
