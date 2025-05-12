@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import Footer from '@/components/custom/footer/footer'
 import Header from '@/components/custom/navbar/header'
+import Footer from '@/components/custom/footer/footer'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { dir } from 'i18next'
 
