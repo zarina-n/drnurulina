@@ -4,7 +4,7 @@ import {
   SheetTitle,
   SheetTrigger
 } from '@/components/ui/sheet'
-import { navItems } from '@/lib/navItems'
+import { navItems } from '@/lib/data'
 import { AlignJustify, Send } from 'lucide-react'
 import Link from 'next/link'
 

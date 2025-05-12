@@ -3,13 +3,20 @@
 import { useState } from 'react'
 import { useTranslation } from '@/i18n/client'
 import { Section } from '../section'
-import { reviews } from '@/lib/reviews'
+import { reviewIds } from '@/lib/data'
+
+type Review = {
+  author: string
+  text: string
+}
 
 export default function Reviews() {
   const { t } = useTranslation('reviews')
+
   const [showAll, setShowAll] = useState(false)
   const [expandedIndexes, setExpandedIndexes] = useState<number[]>([])
 
+  const reviews = reviewIds.map(id => t(id, { returnObjects: true }) as Review)
   const visibleReviews = showAll ? reviews : reviews.slice(0, 3)
 
   const toggleExpanded = (index: number) => {
@@ -20,7 +27,7 @@ export default function Reviews() {
 
   return (
     <Section id='reviews' title={t('header')}>
-      <div className='xs:p-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+      <div className='xs:px-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
         {visibleReviews.map((review, i) => {
           const isExpanded = expandedIndexes.includes(i)
           const isLong = review.text.length > 200
@@ -47,9 +54,8 @@ export default function Reviews() {
               )}
               <div className='mt-4 text-right'>
                 <p className='text-sm font-semibold text-gray-800'>
-                  {review.name}
+                  {review.author}
                 </p>
-                <p className='text-xs text-gray-500'>{review.date}</p>
               </div>
             </div>
           )

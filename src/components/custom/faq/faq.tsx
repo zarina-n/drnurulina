@@ -8,10 +8,19 @@ import {
   AccordionItem,
   AccordionTrigger
 } from '@/components/ui/accordion'
-import { faqItems } from '@/lib/faqItems'
+import { faqIds } from '@/lib/data'
+
+type FAQItem = {
+  question: string
+  answer: string
+}
 
 export default function FAQ() {
   const { t } = useTranslation('faq')
+
+  const faqs: FAQItem[] = faqIds.map(
+    id => t(id, { returnObjects: true }) as FAQItem
+  )
 
   return (
     <Section id='faq' title={t('header')} noSeparator>
@@ -20,11 +29,11 @@ export default function FAQ() {
         collapsible
         className='mx-auto w-full max-w-3xl space-y-2'
       >
-        {faqItems.map((item, index) => (
+        {faqs.map((item, index) => (
           <AccordionItem
             key={index}
             value={`item-${index}`}
-            className='rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm transition-all hover:shadow-md'
+            className='rounded-lg border border-gray-200 bg-indigo-50 px-4 py-3 shadow-sm transition-all hover:shadow-md'
           >
             <AccordionTrigger className='cursor-pointer text-left text-lg font-medium text-gray-800 hover:no-underline'>
               {item.question}
