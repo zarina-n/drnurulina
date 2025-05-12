@@ -19,7 +19,7 @@ export default function TariffsMobile({
   fullInfo: (string | string[])[]
   name: string
 }) {
-  const { t } = useTranslation('home')
+  const { t } = useTranslation('tariffs')
 
   return (
     <div className='mb-4 md:hidden'>

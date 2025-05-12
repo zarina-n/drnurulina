@@ -23,7 +23,7 @@ export function Section({
       >
         {!hideTitle && title && (
           <div className='text-center'>
-            <h2 className='mb-6 inline-block rounded-2xl border-4 border-gray-300 bg-gradient-to-r from-teal-200 to-pink-200 p-2 text-center text-3xl font-semibold text-gray-700 uppercase md:mb-8'>
+            <h2 className='mb-6 inline-block rounded-2xl border-4 border-gray-300 bg-gradient-to-r from-teal-200 to-pink-200 p-2 px-6 text-center text-3xl font-semibold text-gray-700 uppercase md:mb-8'>
               {title}
             </h2>
           </div>

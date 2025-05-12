@@ -23,7 +23,7 @@ export default function CustomButton({
     <Button
       asChild={asChild}
       size='lg'
-      className={`w-xs cursor-pointer ${variant ? '' : 'bg-violet-400 text-white hover:bg-violet-600'}`}
+      className={`w-xs cursor-pointer font-bold md:w-3xs ${variant ? '' : 'bg-indigo-400 text-white hover:bg-indigo-600'}`}
       variant={variant}
     >
       {children}

@@ -24,7 +24,7 @@ export default function WorkOrder() {
 
   return (
     <Section id='work-order' title={t('header')}>
-      <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
+      <div className='xs:px-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
         {workOrderList.map(({ name, description }, i) => (
           <div
             key={i}
