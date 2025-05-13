@@ -11,6 +11,7 @@ type Review = {
 }
 
 export default function Reviews() {
+  // todo: move to a separate page
   const { t } = useTranslation('reviews')
 
   const [showAll, setShowAll] = useState(false)

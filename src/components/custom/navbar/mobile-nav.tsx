@@ -4,16 +4,17 @@ import {
   SheetTitle,
   SheetTrigger
 } from '@/components/ui/sheet'
+import { EMAIL, PHONE_NUMBER } from '@/lib/constants'
 import { navItems } from '@/lib/data'
-import { AlignJustify, Send } from 'lucide-react'
+import { AlignJustify, Mail, Phone, Send } from 'lucide-react'
 import Link from 'next/link'
 
 export default function MobileNav() {
-  // bg-gradient-to-r from-cyan-100 via-teal-200 to-blue-300
+  // todo: move social icons to a separate component
   return (
     <div className='md:hidden'>
       <Sheet>
-        <SheetTrigger className='left-5 cursor-pointer rounded-full bg-gradient-to-br from-indigo-200 via-purple-300 to-pink-300 p-2 opacity-75 hover:opacity-100'>
+        <SheetTrigger className='left-5 cursor-pointer rounded-full bg-[#6680c0] p-2 opacity-75 hover:opacity-100'>
           <AlignJustify />
         </SheetTrigger>
         <SheetContent className='z-2000 p-4'>
@@ -30,11 +31,26 @@ export default function MobileNav() {
               </Link>
             ))}
           </nav>
-          <h1 className='flex items-center justify-start'>
-            <Link href='/'>
-              <Send />
-            </Link>
-          </h1>
+          <div className='flex items-center justify-start gap-3'>
+            <a
+              href={`mailto:${EMAIL}`}
+              className='flex items-center gap-2 text-black hover:text-indigo-500'
+            >
+              <Mail className='h-5 w-5' />
+            </a>
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              className='flex items-center gap-2 text-black hover:text-indigo-500'
+            >
+              <Phone className='h-5 w-5' />
+            </a>
+            <a
+              href={`https://t.me/${PHONE_NUMBER}`}
+              className='flex items-center gap-2 text-black hover:text-indigo-500'
+            >
+              <Send className='h-5 w-5' />
+            </a>
+          </div>
         </SheetContent>
       </Sheet>
     </div>
