@@ -28,16 +28,17 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { locale: string }
 }) {
+  // todo: move colors to it's variable and replace it everywhere
   const { locale } = await params
 
   return (
     <html lang={locale} dir={dir(locale)}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-[#3d4a6e] antialiased`}
       >
         <div className='flex min-h-screen flex-col'>
           <Header />
-          <main className='lg:px-[calc(50%-600px) mx-auto mt-4 w-full max-w-screen-xl flex-1 grow px-4 md:px-6 lg:px-8'>
+          <main className='lg:px-[calc(50%-600px) mx-auto w-full max-w-screen-xl flex-1 grow px-4 pt-4 md:px-6 lg:px-8'>
             {children}
           </main>
           <TailwindIndicator />

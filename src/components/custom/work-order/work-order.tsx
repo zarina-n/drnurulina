@@ -23,13 +23,13 @@ export default function WorkOrder() {
         {steps.map(({ title, description }, i) => (
           <div
             key={i}
-            className='rounded-lg border border-red-200 bg-white p-6 shadow-md transition-all'
+            className='rounded-lg border bg-white p-6 shadow-md transition-all'
           >
             <div className='mb-4 flex items-center space-x-3'>
-              <span className='flex h-8 w-8 items-center justify-center rounded-full bg-red-200 text-sm font-medium text-red-800'>
+              <span className='flex h-8 w-8 items-center justify-center rounded-full text-xl font-bold text-black'>
                 {i + 1}
               </span>
-              <h3 className='text-lg font-semibold text-gray-800'>{title}</h3>
+              <h3 className='text-lg font-semibold text-black'>{title}</h3>
             </div>
             <p className='text-base text-gray-700'>{description}</p>
           </div>
