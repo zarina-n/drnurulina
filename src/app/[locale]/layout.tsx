@@ -26,7 +26,7 @@ export default async function RootLayout({
   params
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
   // todo: move colors to it's variable and replace it everywhere
   const { locale } = await params
